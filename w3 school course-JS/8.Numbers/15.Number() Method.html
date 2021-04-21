@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JS Gloal Methods</h2>
+<p>The Number() Method converts variables to numbers:</p>
+<h4>Number() can be used to convert JavaScript variables to numbers:</h4>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML =
+        Number(true) + "<br>" +
+        Number(false) + "<br>" +
+        Number("10") + "<br>" +
+        Number("  10") + "<br>" +
+        Number("10  ") + "<br>" +
+        Number(" 10  ") + "<br>" +
+        Number("10.33") + "<br>" +
+        Number("10,33") + "<br>" +
+        Number("10 33") + "<br>" +
+        Number("John");
+</script>
+</body>
+</html>

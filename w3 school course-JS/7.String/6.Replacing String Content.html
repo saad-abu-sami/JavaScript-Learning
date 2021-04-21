@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JS String Methods</h1>
+<h3>The replace() method replaces a specified value with another value in a string:</h3>
+<p>Replace "microsoft" with "w3 school"</p>
+<button onclick="myFunction()">Try It</button>
+<P id="demo1">Please visit Microsoft</P>
+
+<h3>By default, the replace() method replaces only the first match:</h3>
+<button onclick="myFunction2()">Try Another</button>
+<p id="demo2">Please visit Microsoft and Microsoft!</p>
+
+<h3>To replace case insensitive, use a regular expression with an /i flag (insensitive):</h3>
+<button onclick="myFunction3()">Try Also</button>
+<p id="demo3">Please visit Microsoft</p>
+
+<h3>To replace all matches, use a regular expression with a /g flag (global match):</h3>
+<button onclick="myFunction4()">Try Me Too</button>
+<p id="demo4">Please visit Microsoft</p>
+<script>
+    function myFunction(){
+        var str = document.getElementById("demo1").innerHTML;
+        var txt = str.replace("Microsoft", "W3Schools");
+        document.getElementById("demo1").innerHTML = txt;
+    }
+    function myFunction2(){
+        var str = document.getElementById("demo2").innerHTML;
+        var txt2 = str.replace("Microsoft", "W3Schools");
+        document.getElementById("demo2").innerHTML = txt2;
+    }
+    function myFunction3(){
+        var str = document.getElementById("demo3").innerHTML;
+        var txt3 = str.replace(/Microsoft/i, "W3Schools");
+        document.getElementById("demo3").innerHTML = txt3;
+    }
+    function myFunction4(){
+        var str = document.getElementById("demo4").innerHTML;
+        var txt4 = str.replace(/Microsoft/g, "W3Schools");
+        document.getElementById("demo4").innerHTML = txt4;
+    }
+</script>
+</body>
+</html>

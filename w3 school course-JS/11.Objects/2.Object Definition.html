@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Objects</h1>
+<p id="demo1"></p>
+<script>
+    //Create an oject
+    var aboutMe = {firstName:"Abu",lastName:"Sami",age:22, eyeColour: "Black"};
+    //Spaces and line breaks are not important. An object definition can span multiple lines:
+    /* var person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue"
+    }; */
+    //Display some data from the object
+    document.getElementById("demo1").innerHTML = aboutMe.firstName + " is " + aboutMe.age + " years old.";
+</script>
+</body>
+</html>

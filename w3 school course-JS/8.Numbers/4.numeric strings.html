@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JS Numbers</h2>
+<p>If you  add two numeric strings,the result will be a concatenated string:</p>
+<p id="demo1"></p>
+<p>If you add a number and a numeric string, the result will be a concatenated string:</p>
+<p id="demo2"></p>
+<p>A common mistake is to expect this result to be 30:</p>
+<p id="demo3"></p>
+<p>A common mistake is to expect this result to be 102020:</p>
+<p id="demo4"></p>
+<script>
+    var x = "10";
+    var y = "20";
+    var m = 10;
+    var k = 20;
+    var z = x + y;
+    var n = m + y;
+    var l = m + k + y;
+    document.getElementById("demo1").innerHTML = z; //answer is 1020
+    document.getElementById("demo2").innerHTML = n; //answer is 1020
+    document.getElementById("demo3").innerHTML = "The result is: " + m + k; //answer is 1020
+    document.getElementById("demo4").innerHTML = l; //answer is 102020
+</script>
+</body>
+</html>

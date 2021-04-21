@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript ISO Dates</h1>
+<h3>The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:</h3>
+<p id="demo1"></p>
+<h3>ISO dates can be written without specifying the day (YYYY-MM):</h3>
+<p id="demo2"></p>
+<h3>ISO dates can be written without month and day (YYYY):</h3>
+<p id="demo3"></p>
+<h3>ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):</h3>
+<p>Separate date and time with a capital T.</p>
+<p>Indicate UTC time with a capital Z.</p>
+<p id="demo4"></p>
+<script>
+    let YMD = new Date("2015-03-25");
+    document.getElementById("demo1").innerHTML = YMD;
+
+    let YM = new Date("2015-03");
+    document.getElementById("demo2").innerHTML = YM;
+
+    let Y = new Date("2015");
+    document.getElementById("demo3").innerHTML = Y;
+
+    let YMDHSM = new Date("2015-03-25T12:00:00Z");
+    document.getElementById("demo4").innerHTML = YMDHSM;
+</script>
+</body>
+</html>

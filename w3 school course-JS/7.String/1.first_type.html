@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JS Strings</h2>
+<p>You an use quotes inside a string, as long as they dont match the
+quotes surrounding the string:</p>
+<p id="demo"></p>
+<h2>Escape Character</h2>
+<p>The escape sequence \",\',\\ iserts in a string</p>
+<p id="demo2"></p>
+<script>
+    var answer1 = "It's alright";       //you can use only dou ble quote
+    var answer2 = "He is called 'SAM'"; //you can use single quote inside the double quote
+    var answer3 = 'He is called "SAM"'; //you can use double quote inside a single quote string
+
+    document.getElementById("demo").innerHTML =
+        answer1 + "<br>" +
+        answer2 + "<br>" +
+        answer3; //<br> for a line break
+    var x = "We are the so-called \"Vikings\" from the north.";
+    var y = 'It\'s alright.';
+    var z = "The character \\ is called backslash.";
+    document.getElementById("demo2").innerHTML =
+        x + "<br>" +
+        y + "<br>" +
+        z + "<br>";
+</script>
+</body>
+</html>

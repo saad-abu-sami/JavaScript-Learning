@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JS Global Methods</h2>
+<p>The parseFloat() Method converts strings to number:</p>
+<h4>parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:</h4>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML =
+        parseFloat("10") + "<br>" +
+        parseFloat("10.33") + "<br>" +
+        parseFloat("10 6") + "<br>" +
+        parseFloat("10 years") + "<br>" +
+        parseFloat("years 10");
+</script>
+</body>
+</html>

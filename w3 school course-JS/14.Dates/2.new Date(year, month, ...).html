@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Dates</h1>
+<h3>6 numbers specify year, month, day, hour, minute and second:</h3>
+<h2>Note:</h2>
+<h4>4 numbers specify year, month, day, and hour:</h4>
+<h4>3 numbers specify year, month, and day:</h4>
+<h4>2 numbers specify year and month:</h4>
+<h4>You cannot omit month. If you supply only one parameter it will be treated as milliseconds.</h4>
+<p>Note: JavaScript counts months from 0 to 11.
+
+    January is 0. December is 11.</p>
+<p id="demo1"></p>
+<h1>Previous Century</h1>
+<h3>One and two digit years will be interpreted as 19xx:</h3>
+<P ID="demo2"></P>
+<script>
+    var d = new Date(2018, 11, 8, 8, 30, 30);
+    document.getElementById("demo1").innerHTML = d;
+    var pyd = new Date(99, 11, 8);
+    document.getElementById("demo2").innerHTML = pyd;
+</script>
+</body>
+</html>

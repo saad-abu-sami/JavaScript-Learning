@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Dates to toString()</h1>
+<h3>The toString() method converts a date to a string:</h3>
+<p id="demo1"></p>
+<h1>toUTCString()</h1>
+<h3>The toUTCString() method converts a date to a UTC string (a date display standard):</h3>
+<p id="demo2"></p>
+<h1>toDateString()</h1>
+<h3>The toDateString() method converts a date to a date string:</h3>
+<p id="demo3"></p>
+<h1>toISOString()</h1>
+<h3>The toISOString() method converts a date to a date string, using the ISO standard format:</h3>
+<p id="demo4"></p>
+<script>
+    let date_to_string = new Date();
+    document.getElementById("demo1").innerHTML = date_to_string.toString();
+
+    let d_to_st = new Date();
+    document.getElementById("demo2").innerHTML = d_to_st.toUTCString();
+
+    var date_str = new Date();
+    document.getElementById("demo3").innerHTML = date_str.toDateString();
+
+    var isosstr = new Date();
+    document.getElementById("demo4").innerHTML = isosstr.toISOString();
+</script>
+</body>
+</html>

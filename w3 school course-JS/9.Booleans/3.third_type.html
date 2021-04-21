@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Display the Boolean value of 0:</p>
+<button onclick="myFunction()">Try it!!</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        var x = 0;
+        document.getElementById("demo").innerHTML = Boolean(x) //it returns false
+        //The Boolean value of -0 (minus zero) is false
+        //The Boolean value of "" (empty string) is false
+        //The Boolean value of undefined(var x;) is false
+        //The Boolean value of null(var x = null;) is false
+        //The Boolean value of false is (you guessed it) false
+        //The Boolean value of NaN(var x = 10/"H") is false
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Arrays</h1>
+<p id="demo1"></p>
+<h3>Spaces and line breaks are not important. A declaration can span multiple lines:</h3>
+<p id="demo2"></p>
+<h3>The following example also creates an Array, and assigns values to it:</h3>
+<p id="demo3"></p>
+<h3>JavaScript array elements are accessed using numeric indexes (starting from 0).</h3>
+<p id="demo4"></p>
+<h3>Changing an Array Element</h3>
+<p id="demo5"></p>
+<script>
+    var cars = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo1").innerHTML = cars;
+    var cars2 = [
+        "Saab",
+        "Volvo",
+        "BMW"
+    ];
+    document.getElementById("demo2").innerHTML = cars2;
+    var cars3 = new Array("Saab", "Volvo", "BMW");
+    document.getElementById("demo3").innerHTML = cars3;
+    var cars4 = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo4").innerHTML = cars4[2];
+    var cars5 = ["Saab", "Volvo", "BMW"];
+    cars5[0] = "Lamborgini";
+    document.getElementById("demo5").innerHTML = cars5;
+</script>
+</body>
+</html>

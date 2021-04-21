@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Dates</h1>
+<h3>new Date(dateString) creates a new date object from a date string:</h3>
+<p id="demo1"></p>
+<h1>JavaScript Stores Dates as Milliseconds</h1>
+<p>JavaScript stores dates as number of milliseconds since January 01, 1970,
+    00:00:00 UTC (Universal Time Coordinated).</p>
+<h3>Zero time is January 01, 1970 00:00:00 UTC.</h3>
+<p id="demo2"></p>
+<h1>Plus milisecond</h1>
+<h3>+100000000000 milliseconds from Jan 1, 1970, is approximately Mar 3, 1973:</h3>
+<p id="demo3"></p>
+<h1>Minus Milisecond</h1>
+<h3>-100000000000 milliseconds from Jan 1, 1970, is approximately Oct 31, 1966:</h3>
+<p id="demo4"></p>
+<script>
+    var d = new Date("January 8, 2014 11:59:00");
+    document.getElementById("demo1").innerHTML = d;
+
+    var zero_time = new Date(0);
+    document.getElementById("demo2").innerHTML = zero_time;
+
+    var plus = new Date(100000000000);
+    document.getElementById("demo3").innerHTML = plus;
+
+    var minus = new Date(-100000000000);
+    document.getElementById("demo4").innerHTML = minus;
+</script>
+</body>
+</html>

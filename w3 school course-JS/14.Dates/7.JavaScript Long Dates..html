@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Long Dates.</h1>
+<h3>Long dates are most often written with a "MM DD YYYY" syntax like this:</h3>
+<p id="demo1"></p>
+<h3>Month and day can be in any order:</h3>
+<p id="demo2"></p>
+<h3>And, month can be written in full (January), or abbreviated (Jan):</h3>
+<p id="demo3"></p>
+<h3>Commas are ignored. Names are case insensitive:</h3>
+<p id="demo4"></p>
+<h3>Date.parse() returns the number of milliseconds between the date and January 1, 1970:</h3>
+<p id="demo5"></p>
+<script>
+    var LD1 = new Date("Mar 25 2015");
+    document.getElementById("demo1").innerHTML = LD1;
+
+    var M_side = new Date("25 Mar 2015");
+    document.getElementById("demo2").innerHTML = M_side;
+
+    var full_spell_month = new Date("January 25 2015");
+    document.getElementById("demo3").innerHTML = full_spell_month;
+
+    var ignore_comma = new Date("JANUARY, 25, 2015");
+    document.getElementById("demo4").innerHTML = ignore_comma;
+
+    var msec = Date.parse("March 21, 2012");
+    document.getElementById("demo5").innerHTML = msec;
+</script>
+</body>
+</html>

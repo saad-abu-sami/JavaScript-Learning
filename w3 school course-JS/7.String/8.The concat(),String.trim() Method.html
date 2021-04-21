@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JS String Method</h1>
+<h3>The contact() method joins two or more strings:</h3>
+<p id="demo1"></p>
+<h3>The concat() method can be used instead of the plus operator. These two lines do the same:</h3>
+<p id="demo2"></p>
+<h2>JavaScript String.trim()</h2>
+<h3>Click the button to alert the string with removed white space</h3>
+<button onclick="myFunction()">Try MEE</button>
+<p><strong>Note:</strong>The train method is not support in internate explorer 8 and earlier version:</p>
+<script>
+    var text1 = "Hello";  //String 1
+    var text2 = "SAMI!!"; //String 2
+    var text3 = text1.concat(" ", text2);
+    document.getElementById("demo1").innerHTML = text3;
+    //var text4 = "Hello" + " " + "World!";
+    var text5 = "Hello".concat(" ", "World!");
+    document.getElementById("demo2").innerHTML = text5;
+    function myFunction() {
+        var str = "      Hello Dear !    ";
+        alert(str.trim())
+    }
+</script>
+</body>
+</html>

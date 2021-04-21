@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>JS Numbers </h1>
+<p>A number can be an object ,but there is no need to create a number as a object.</p>
+<h2>Normally JavaScript numbers are primitive values created from literals:</h2>
+<h2>But numbers can also be defined as objects with the keyword new:</h2>
+<p id="demo1"></p>
+<h2>When using the == operator, equal numbers are equal:</h2>
+<p id="demo2"></p>
+<p>When using the === operator, equal numbers are not equal,
+    because the === operator expects equality in both type and value.</p>
+<p id="demo3"></p>
+<h2>Objects cannot be compared:</h2>
+<p id="demo4"></p>
+<!--the difference between (x==y) and (x===y).
+Comparing two JavaScript objects will always return false.-->
+<script>
+    var x = 123;
+    var y = new Number(123);
+    document.getElementById("demo1").innerHTML = typeof x + "<br>" + typeof y;
+    document.getElementById("demo2").innerHTML = (x == y); //true
+    document.getElementById("demo3").innerHTML = (x === y); //false
+    var m = new Number(1000);
+    var n = new Number(1000);
+    document.getElementById("demo4").innerHTML = (m == n); //false
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript</h2>
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+    var x = 69 + "SAM";
+    var y = "SAM" + 69;
+    var z = 60 + 9 + "SAM";
+    var m;     //Now m is undefined
+    m = 8.98;  //Now m is float
+    m = 5;     //Now m is int
+    m = "SAM"; //Now m is String
+    document.getElementById("demo1").innerHTML = x;
+    document.getElementById("demo2").innerHTML = y;
+    document.getElementById("demo3").innerHTML = z;
+    /*JS has dynamic data types.This means that the same variable
+    can be used to hold different data types:*/
+    document.getElementById("demo4").innerHTML = m;
+</script>
+</body>
+</html>

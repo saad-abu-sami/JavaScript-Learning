@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript Strings</h2>
+<p>You can brak a code line within a text string with a backslash(\)</p>
+<p id="demo1"></p>
+<p>You cannt break a code line with a (\) backslash </p>
+<p id="demo3"></p>
+<p>The safest way to break a code lie i a string is using string addition(+)</p>
+<p id="demo2"></p>
+<script>
+    document.getElementById("demo1").innerHTML = "Hello \
+    SAM!!";
+    //document.getElementById("demo3").innerHTML = \
+    //"Hello SAM!!";
+    document.getElementById("demo2").innerHTML = "Hello" +
+        "SAM!!";
+</script>
+</body>
+</html>

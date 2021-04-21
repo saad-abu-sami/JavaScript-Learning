@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JS Number Object Properties</h2>
+<P>MAX_VALUE returns the largest possible number in JavaScript.</P>
+<p id="demo1"></p>
+<p>MIN_VALUE returns the smallest number possible in JavaScript.</p>
+<p id="demo2"></p>
+<p>POSITIVE_INFINITY</p>
+<p id="demo3"></p>
+<p>POSITIVE_INFINITY is returned on overflow:</p>
+<p id="demo4"></p>
+<p>NEGATIVE_INFINITY</p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<script>
+    var j = Number.MAX_VALUE;
+    document.getElementById("demo1").innerHTML = j;
+    var k = Number.MIN_VALUE;
+    document.getElementById("demo2").innerHTML = k;
+    var l = Number.POSITIVE_INFINITY;
+    document.getElementById("demo3").innerHTML = l;
+    var m = 1 / 0;
+    document.getElementById("demo4").innerHTML = m;
+    var x = Number.NEGATIVE_INFINITY;
+    var y = -1 / 0;
+    document.getElementById("demo5").innerHTML = x;
+    document.getElementById("demo6").innerHTML = y;
+</script>
+</body>
+</html>

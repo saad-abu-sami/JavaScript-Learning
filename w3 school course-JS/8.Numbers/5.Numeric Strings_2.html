@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>JS Numbers</p>
+<P>JS will try to convert strig to numbers when dividing:["100"/"10"]</P>
+<p id="demo1"></p>
+<p>JS will try to convert strig to numbers when multiplying:["100"*"10"]</p>
+<p id="demo2"></p>
+<p>JS will try to convert strig to numbers when subtrying:["100"-"10"]</p>
+<p id="demo3"></p>
+<p>JS will not convert strings to numers when adding:["100"+"10"=10010]</p>
+<p id="demo4"></p>
+<script>
+    var x = "100";
+    var y = "10";
+    var i = x / y;
+    var o = x * y;
+    var u = x - y;
+    var d = x + y;
+    document.getElementById("demo1").innerHTML = i;
+    document.getElementById("demo2").innerHTML = o;
+    document.getElementById("demo3").innerHTML = u;
+    document.getElementById("demo4").innerHTML = d;
+</script>
+</body>
+</html>

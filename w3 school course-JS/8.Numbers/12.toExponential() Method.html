@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JS Number Methods</h2>
+<p>The toExponential() Method returns a string, with the number
+rouded and written using exponential notation:</p>
+<p>An optional parmanent defines the number of digits behind the decimal point.</p>
+<p id="demo"></p>
+<script>
+    var x = 9.656;
+    document.getElementById("demo").innerHTML =
+        x.toExponential() + "<br>" +
+        x.toExponential(2) + "<br>" +
+        x.toExponential(4) + "<br>" +
+        x.toExponential(6);
+
+</script>
+</body>
+</html>

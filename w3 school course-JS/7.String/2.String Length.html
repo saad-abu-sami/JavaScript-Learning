@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript String Properties</h2>
+<p>The length property returns the length of a string:</p>
+<p id="demo2"></p>
+<h3>Finding a String in a String</h3>
+<p>The indexof() method returns the position of the first occurrence of a specified text:</p>
+<p id="demo3"></p>
+<p>Both indexof() and lastIdexof() return -1 if the text i not found:</p>
+<p id="demo4"></p>
+<p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+<p id="demo5"></p>
+<h3>The lastIndexOf() method accepts a second parameter as the starting position for the search.</h3>
+<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+<p>Position 15 is position 15 from the beginning.</p>
+<p id="demo6"></p>
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+<p id="demo7"></p>
+<script>
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("demo2").innerHTML = txt.length;
+    var str = "Please locate where 'locate' occurs! ";          //String Line
+    var posit = str.lastIndexOf("locate");                      //here we want to find locate
+    document.getElementById("demo3").innerHTML = posit;
+    var posit2 = str.indexOf("SAM!!");                          //here we want to find sam!! but sam is not on str
+    document.getElementById("demo4").innerHTML = posit2;
+    var posit3 = str.indexOf("locate",15);
+    document.getElementById("demo5").innerHTML = posit3;
+    var posit4 = str.lastIndexOf("locate", 15);
+    document.getElementById("demo6").innerHTML = posit4;
+    var posit5 = str.search("locate");
+    document.getElementById("demo7").innerHTML = posit5;
+</script>
+</body>
+</html>

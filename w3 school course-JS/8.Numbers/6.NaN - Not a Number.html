@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>JavaScript NaN</p>
+<p>You can use the global JS function isNaN() to find out if a value is a number</p>
+<p id="demo1"></p>
+<p>If you use NaN is a mathmetical[+] operation, the result will also e NaN:</p>
+<p id="demo2"></p>
+<p>If you use NaN in a mathmetical operation,the result can be a concatenation:</p>
+<p id="demo3"></p>
+<p>The typeof NaN is number:</p>
+<p id="demo4"></p>
+<script>
+    var u = 100 / "EGG";
+    document.getElementById("demo1").innerHTML = isNaN(u);
+    var y = 99;
+    document.getElementById("demo2").innerHTML = u + y;
+    var i = "99";
+    document.getElementById("demo3").innerHTML = u + i;
+    var s = NaN;
+    document.getElementById("demo4").innerHTML = typeof s;
+</script>
+</body>
+</html>
