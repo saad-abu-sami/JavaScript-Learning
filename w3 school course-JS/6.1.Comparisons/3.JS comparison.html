@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Comparison</title>
+</head>
+<body>
+<h1>Conditional (Ternary) Operator</h1>
+<p>JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.</p>
+<p>Input your age and click the button:</p>
+<input id="age" value="18" />
+<button onclick="myFunction()">Click me</button>
+<p id="demo1"></p>
+<script>
+    function myFunction() {
+        let age = document.getElementById("age").value;
+        let voteable = (age < 18) ? "Too Young" : "Old Enough";
+        document.getElementById("demo1").innerHTML = voteable + " to vote.";
+    }
+</script>
+</body>
+</html>
