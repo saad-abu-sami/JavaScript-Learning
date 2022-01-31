@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Property</title>
+</head>
+<body>
+<h1>JavaScript Array Property</h1>
+<h3>Adding Array Elements</h3>
+<p>The easiest way to add a new element to an array is using the push() method:</p>
+<p>Adding lemon to the array</p>
+<button onclick="myFunction()">TRY ME</button>
+<p id="demo1"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple"]; //making a array list
+    document.getElementById("demo1").innerHTML = fruits;
+
+    function myFunction() {
+        fruits.push("Lemon"); //adding new item
+        document.getElementById("demo1").innerHTML = fruits;
+    }
+</script>
+</body>
+</html>

@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+           minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
 <h3>Looping Array Elements.You can also use the Array.forEach() function:</h3>
-<p id="demo1"></p>
 <p>Array.forEach() calls a function for each array element.</p>
 <p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p>
+<p id="demo1"></p>
 <script>
-    var fruits, text;
-    fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-    text = "<ul>";
+    let fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let text = "<ul>";
     fruits.forEach(myFunction);
-    text += "</ul>";
-    document.getElementById("demo").innerHTML = text;
-
+    text = text + "</ul>";
+    document.getElementById("demo1").innerHTML = text;
     function myFunction(value) {
-        text += "<li>" + value + "</li>";
+        text =text + "<li>" + value ;
     }
 </script>
 </body>
