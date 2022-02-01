@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Difference Between Arrays and Objects</title>
+</head>
+<body>
+<h2>In JavaScript, arrays use numbered indexes.</h2>
+<h2>In JavaScript, objects use named indexes.</h2>
+<p>
+    When to Use Arrays. When to use Objects.
+    JavaScript does not support associative arrays.
+    You should use objects when you want the element names to be strings (text).
+    You should use arrays when you want the element names to be numbers.
+</p>
+<p>Avoid using new Array(). Use [] instead.</p>
+<p id="demo1"></p>
+<p>Create an Array with three elements.</p>
+<p id="demo2"></p>
+<p>Create an Array with one element.</p>
+<p id="demo3"></p>
+<h2>How to Recognize an Array</h2>
+<p>The problem is that the JavaScript operator typeof returns "object":</p>
+<p id="demo4"></p>
+<script>
+    //const points = new Array(40, 100, 1, 5, 25, 10);
+    const points = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo1").innerHTML = points[0];
+    let points1 = new Array(40, 100, 1);
+    document.getElementById("demo2").innerHTML = points1;
+    let points2 = [40];
+    document.getElementById("demo3").innerHTML = points2;
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo4").innerHTML = typeof fruits;
+</script>
+</body>
+</html>
