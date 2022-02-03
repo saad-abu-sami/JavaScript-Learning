@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+           maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Array Methods</title>
 </head>
 <body>
-
+<h1>Array push()</h1>
+<h2>The push() method adds a new element to an array (at the end):</h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<h2>The push() method returns the new array length:</h2>
+<p id="demo3"></p>
+<h1>Shifting Elements</h1>
+<h4>Shifting is equivalent to popping, but working on the first element instead of the last.</h4>
+<h4>The shift() method removes the first array element and "shifts" all other
+    elements to a lower index.</h4>
+<p id="demo4"></p><p id="demo5"></p><p id="demo6"></p><p id="demo7"></p>
+<h4>The unshift() method adds new elements to the beginning of an array</h4>
+<p id="demo8"></p><p id="demo9"></p>
+<h4>The unshift() method returns the length of the new array:</h4>
+<p id="demo10"></p><p id="demo11"></p>
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo1").innerHTML = fruits;
+    fruits.push("Kiwi");
+    document.getElementById("demo2").innerHTML = fruits; //adding kiwi
+    document.getElementById("demo3").innerHTML = fruits.push("Graps","Guava");
+    //after adding kiwi it's length 5, and after two more 7
+    document.getElementById("demo4").innerHTML = fruits;
+    fruits.shift();
+    document.getElementById("demo5").innerHTML = fruits; //it removes Banana
+    document.getElementById("demo6").innerHTML = fruits.shift(); //removes Orange and it shows
+    document.getElementById("demo7").innerHTML = fruits;//without Orange it shows rest of all
+    document.getElementById("demo8").innerHTML = fruits;
+    fruits.unshift("Lemon");
+    document.getElementById("demo9").innerHTML = fruits;
+    document.getElementById("demo10").innerHTML = fruits.unshift("Jackfruit");
+    document.getElementById("demo11").innerHTML = fruits;
+</script>
 </body>
 </html>
