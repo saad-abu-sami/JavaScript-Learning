@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Sort</title>
+</head>
+<body>
+<h2>The sort() method sorts an array alphabetically:</h2>
+<p id="demo1"></p><p id="demo2"></p>
+<h2>The reverse() method reverses the elements in an array.</h2>
+<p id="demo3"></p>
+<h1>Numeric Sort</h1>
+
+<p id="demo4"></p>
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo1").innerHTML = fruits;
+    const fruits2 = fruits.sort();
+    document.getElementById("demo2").innerHTML = fruits2;
+    fruits2.reverse();
+    document.getElementById("demo3").innerHTML = fruits2;
+</script>
+</body>
+</html>
