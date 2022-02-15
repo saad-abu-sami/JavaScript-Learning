@@ -13,8 +13,14 @@
 <h2>The reverse() method reverses the elements in an array.</h2>
 <p id="demo3"></p>
 <h1>Numeric Sort</h1>
-
-<p id="demo4"></p>
+<h4>By default, the sort() function sorts values as strings.</h4>
+<p id="demo4"></p><p>Increasing</p><p id="demo5"></p>
+<p>Sort the array in descending order:</p><p id="demo6"></p>
+<h1>The Compare Function</h1>
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically Increasing</button>
+<button onclick="myFunction3()">Sort Numerically Decreasing</button>
+<p id="demo"></p>
 <script>
     const fruits = ["Banana", "Orange", "Apple", "Mango"];
     document.getElementById("demo1").innerHTML = fruits;
@@ -22,6 +28,24 @@
     document.getElementById("demo2").innerHTML = fruits2;
     fruits2.reverse();
     document.getElementById("demo3").innerHTML = fruits2;
+    const points = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo4").innerHTML = points;
+    points.sort(function(a, b){return a - b});
+    document.getElementById("demo5").innerHTML = points;
+    points.sort(function(a, b){return b - a});
+    document.getElementById("demo6").innerHTML = points;
+    function myFunction1() {
+        points.sort();
+        document.getElementById("demo").innerHTML = points; //Only sort getting alphabetically
+    }
+    function myFunction2() {
+        points.sort(function(a, b){return a - b});
+        document.getElementById("demo").innerHTML = points;
+    }
+    function myFunction3() {
+        points.sort(function(a, b){return b - a});
+        document.getElementById("demo").innerHTML = points;
+    }
 </script>
 </body>
 </html>

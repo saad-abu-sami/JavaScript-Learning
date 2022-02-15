@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Sort</title>
+</head>
+<body>
+<h1>Sorting an Array in Random Order</h1>
+<p id="demo1"></p>
+<h1>Using Math.max() on an Array</h1>
+<h4>Use <ins>Math.max.apply</ins> to find the highest number in an array:</h4>
+<p>The highest number is <span id="demo2"></span>.</p>
+<h1>Using Math.min() on an Array</h1>
+<h4>Use Math.min.apply to find the lowest number in an array:</h4>
+<p>The lowest number is <span id="demo3"></span>.</p>
+<script>
+    const points = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo1").innerHTML = points;
+    function myFunction() {
+        points.sort(function (a, b) {
+            return 0.5 - Math.random()
+        });
+        document.getElementById("demo1").innerHTML = points;
+    }
+    document.getElementById("demo2").innerHTML = myArrayMax(points);
+    function myArrayMax(arr) {
+        return Math.max.apply(null, arr);
+    }
+    document.getElementById("demo3").innerHTML = myArrayMin(points);
+    function myArrayMin(arr) {
+        return Math.min.apply(null, arr);
+    }
+</script>
+</body>
+</html>
