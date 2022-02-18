@@ -22,12 +22,21 @@
     function myFunction() {
         points.sort(function (a, b) {
             return 0.5 - Math.random()
+            /*The Math.random() function returns a floating-point, pseudo-random number in the
+             range 0 to less than 1 (inclusive of 0, but not 1)
+             with approximately uniform distribution over that range*/
         });
         document.getElementById("demo1").innerHTML = points;
     }
     document.getElementById("demo2").innerHTML = myArrayMax(points);
+
     function myArrayMax(arr) {
+        /*The largest of the given numbers. If any one or more of the parameters cannot be
+         converted into a number, NaN is returned.
+         The result is -Infinity if no parameters are provided.*/
+        //If no arguments are given, the result is -Infinity.
         return Math.max.apply(null, arr);
+        //For this we add null to Math.max.apply
     }
     document.getElementById("demo3").innerHTML = myArrayMin(points);
     function myArrayMin(arr) {

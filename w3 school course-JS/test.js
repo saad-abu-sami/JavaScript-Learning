@@ -1,12 +1,14 @@
-function difference(a, b) {
-   return Math.abs(a - b);
+const points = [40, 100, 1, 5, 25, 10];
+
+
+function myFunction(points) {
+   for (let i = points.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * i);
+      let k = points[i];
+      points[i] = points[j];
+      points[j] = k;
+      return k;
+   }
+   
 }
-
-console.log(difference(3, 5));
-// expected output: 2
-
-console.log(difference(5, 3));
-// expected output: 2
-
-console.log(difference(1.23456, 7.89012));
- // expected output: 6.6555599999999995
+myFunction(points);

@@ -10,6 +10,33 @@
 <body>
 <h1>Array forEach()</h1>
 <h4>The forEach() method calls a function (a callback function) once for each array element.</h4>
-
+<p id="demo1"></p>
+<h1>Array map()</h1>
+<h4>The map() method creates a new array by performing a function on each array element.
+    The map() method does not execute the function for array elements without values.
+    The map() method does not change the original array.</h4>
+<p id="demo2"></p>
+<h1>Array filter()</h1>
+<h4>The filter() method creates a new array with array elements that passes a test.</h4>
+<p id="demo3"></p>
+<script>
+    const numbers = [45, 4, 9, 16, 25];
+    let txt = "";
+    numbers.forEach(myFunction1);
+    document.getElementById("demo1").innerHTML = txt;
+    function myFunction1(value, index, array) { //Note that the function takes 3 arguments:
+        txt += value + "<br>";
+    }
+    const numbers2 = numbers.map(myFunction2);
+    document.getElementById("demo2").innerHTML = numbers2;
+    function myFunction2(value, index, array) {
+        return value * 2;
+    }
+    const over18 = numbers.filter(myFunction);
+    document.getElementById("demo3").innerHTML = over18;
+    function myFunction(value, index, array) {
+        return value > 18 ; //return al the 18+ value
+    }
+</script>
 </body>
 </html>

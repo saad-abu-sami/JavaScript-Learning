@@ -39,8 +39,10 @@
         document.getElementById("demo").innerHTML = points; //Only sort getting alphabetically
     }
     function myFunction2() {
-        points.sort(function(a, b){return a - b});
-        document.getElementById("demo").innerHTML = points;
+        points.sort(function(a, b){return a - b}); //Numerically increasing due to this.
+        //From1,10 (1-10)=-9 , -9<0 So,1 taking[0]index.
+        //From45,5 (45-5)=40 , 40>0 So,5 taking[1]index. Like this 1,5,10,25,40,100 organized
+        document.getElementById("demo").innerHTML = points; //More info Screenshot 11.3
     }
     function myFunction3() {
         points.sort(function(a, b){return b - a});
